@@ -1,0 +1,10 @@
+{% extends 'layoutbase.html' %}
+{% block title %} Search result {% endblock %}
+{% block content %}
+<h1>Search result for "{{ word }}"</h1>
+{% if definition %}
+    <div>{{ definition|safe }}</div>
+{% elif error_message %}
+    <div>{{ error_message }}</div>
+{% endif %}
+{% endblock %}

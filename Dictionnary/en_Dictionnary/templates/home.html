@@ -1,0 +1,12 @@
+{% extends 'layoutbase.html' %}
+{% block title %} Searching zone {% endblock %}
+{% block content %}
+<h1>Search everything you want!!</h1>
+
+    <form class="#" method="get" action="{% url 'search' %}">
+        <input class="#" type="search" name="word" placeholder="What do you search?">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+{% endblock %}
